@@ -32,11 +32,11 @@ void
 station_load_train(struct station *station, int count)
 {
 
+    station->available_seats_count = count;
 
     pthread_mutex_lock(&(station->lock));
-    station->available_seats_count = count;
     station->enough_seats_count = count;
-
+//  if there's no passengers or available seats, just let the train leave the station immediately
     if(station->waiting_passengers != 0 && station->available_seats_count != 0){
 //      notify all waited passengers
         pthread_cond_broadcast(&(station->train_in_station));
