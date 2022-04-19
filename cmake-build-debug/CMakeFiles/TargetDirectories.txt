@@ -1,0 +1,3 @@
+/home/deffo/CLionProjects/CalTrain/cmake-build-debug/CMakeFiles/CalTrain.dir
+/home/deffo/CLionProjects/CalTrain/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/deffo/CLionProjects/CalTrain/cmake-build-debug/CMakeFiles/rebuild_cache.dir
